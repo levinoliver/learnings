@@ -1,4 +1,4 @@
-#+SETUPFILE: white_clean.theme
+#+SETUPFILE: theme-readtheorg.setup
 #+EXPORT_FILE_NAME: index
 #+PROPERTY: header-args :tangle "_config.yml" 
 
