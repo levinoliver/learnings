@@ -32,3 +32,5 @@ lets start by seeing we are and if we're in a valid git repo
 | .     |              |         |       |     |
 |       |              |         |       |     |
 | 0     | directories, |       0 | files |     |
+
+* test
