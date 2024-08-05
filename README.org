@@ -1,0 +1,38 @@
+#+SETUPFILE: white_clean.theme
+#+EXPORT_FILE_NAME: index
+#+PROPERTY: header-args :tangle "_config.yml" 
+
+* github pages using org mode
+
+create a =README.org= file add the following in it at the start.
+
+#+begin_src 
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+EXPORT_FILE_NAME: index
+#+end_src
+* then create a *_config.yml* file and add the following content in it.
+
+#+begin_src yaml :tangle "_config.yml" 
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+#+end_src
+
+but we have a local theme file i.e 
+
+#+begin_src yaml :tangle "_config.yml"
+theme: jekyll-theme-readtheorg
+sass:
+  sass_dir: .
+  style: compressed
+#+end_src
+
+to export the tangled source code use the keybind =C-c C-v t= which exports the code blocks to source specific files.
+
+* org file link test
+
+[[file:Git-from-the-ground-up.org][git from the ground up]]
+
+
+* all org mode link
+best themes for org html reside here [[https://olmon.gitlab.io/org-themes/][all links]]

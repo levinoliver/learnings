@@ -1,0 +1,17 @@
+#+SETUPFILE: white_clean.theme
+#+Title: Git from the Ground up
+
+
+* Introduction
+We're going to learn a little something about the git data model by crafting the .git directory and blob by hand. it'll be fun!
+
+* Heading 1
+*bold*
+
+* Heading 2
+/Italics/
+
+* Heading 3
+=monospace=
+
+
