@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-08-06 Tue 22:51 -->
+<!-- 2024-08-06 Tue 22:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Git from the Ground up</title>
@@ -23,69 +23,69 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org784c86e">1. Introduction</a></li>
-<li><a href="#org92b8fcc">2. Heading 1</a></li>
-<li><a href="#org252631f">3. Heading 2</a></li>
-<li><a href="#org2c9de54">4. Heading 3</a></li>
-<li><a href="#org1d29f89">5. where are we and is git happy?</a></li>
-<li><a href="#orgd5e4c7a">6. test</a></li>
+<li><a href="#orgcd813d8">1. Introduction</a></li>
+<li><a href="#org4b4cf67">2. Heading 1</a></li>
+<li><a href="#org4a27240">3. Heading 2</a></li>
+<li><a href="#orgacc31aa">4. Heading 3</a></li>
+<li><a href="#org11fbde8">5. where are we and is git happy?</a></li>
+<li><a href="#org0c7ad82">6. test</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org784c86e" class="outline-2">
-<h2 id="org784c86e"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-orgcd813d8" class="outline-2">
+<h2 id="orgcd813d8"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 We're going to learn a little something about the git data model by crafting the .git directory and blob by hand. it'll be fun!
 </p>
 </div>
 </div>
-<div id="outline-container-org92b8fcc" class="outline-2">
-<h2 id="org92b8fcc"><span class="section-number-2">2.</span> Heading 1</h2>
+<div id="outline-container-org4b4cf67" class="outline-2">
+<h2 id="org4b4cf67"><span class="section-number-2">2.</span> Heading 1</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <b>bold</b>
 </p>
 </div>
 </div>
-<div id="outline-container-org252631f" class="outline-2">
-<h2 id="org252631f"><span class="section-number-2">3.</span> Heading 2</h2>
+<div id="outline-container-org4a27240" class="outline-2">
+<h2 id="org4a27240"><span class="section-number-2">3.</span> Heading 2</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 <i>Italics</i>
 </p>
 </div>
 </div>
-<div id="outline-container-org2c9de54" class="outline-2">
-<h2 id="org2c9de54"><span class="section-number-2">4.</span> Heading 3</h2>
+<div id="outline-container-orgacc31aa" class="outline-2">
+<h2 id="orgacc31aa"><span class="section-number-2">4.</span> Heading 3</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 <code>monospace</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org1d29f89" class="outline-2">
-<h2 id="org1d29f89"><span class="section-number-2">5.</span> where are we and is git happy?</h2>
+<div id="outline-container-org11fbde8" class="outline-2">
+<h2 id="org11fbde8"><span class="section-number-2">5.</span> where are we and is git happy?</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 lets start by seeing we are and if we're in a valid git repo
 </p>
 
 <div class="org-src-container">
-<pre class="src src-shell"><span style="color: #8f0075; font-weight: bold;">echo</span> <span style="color: #3548cf;">"My current working dir is: $(dirs +0)"</span>
+<pre class="src src-shell"><span style="color: #8f0075; font-weight: bold;">echo</span> <span style="color: #3548cf;">"My current working dir is: $(pwd)"</span>
 ls -l
 tree .
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgd5e4c7a" class="outline-2">
-<h2 id="orgd5e4c7a"><span class="section-number-2">6.</span> test</h2>
+<div id="outline-container-org0c7ad82" class="outline-2">
+<h2 id="org0c7ad82"><span class="section-number-2">6.</span> test</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Levin</p>
-<p class="date">Created: 2024-08-06 Tue 22:51</p>
+<p class="date">Created: 2024-08-06 Tue 22:57</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
