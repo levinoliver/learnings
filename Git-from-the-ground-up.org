@@ -1,8 +1,8 @@
-#+SETUPFILE: theme-readtheorg.setup
 #+Title: Git from the Ground up
+#+SETUPFILE: theme-readtheorg.setup
 #+AUTHOR: Levin
 #+PROPERTY: header-args :dir ~/Projects/Code/learnings/org/tmp
-#+PROPERTY: header-args:bash  :results output
+#+PROPERTY: :results output :exports both
 
 * Introduction
 We're going to learn a little something about the git data model by crafting the .git directory and blob by hand. it'll be fun!
