@@ -1,7 +1,7 @@
 #+SETUPFILE: theme-readtheorg.setup
 #+EXPORT_FILE_NAME: index
 #+PROPERTY: header-args :tangle "_config.yml"
-#+PROPERTY: :results output
+#+PROPERTY: :results output :exports results
 
 * github pages using org mode
 
@@ -40,23 +40,17 @@ git status 2>&1 || echo Git is not happy.
 #+END_SRC
 
 #+RESULTS:
-#+begin_example
-| My        | current                      | working                    | dir        | is:     | /home/vipulmx/Projects/Code/learnings |         |                |         |            |            |      |
-| On        | branch                       | main                       |            |         |                                       |         |                |         |            |            |      |
-| Your      | branch                       | is                         | up         | to      | date                                  | with    | 'origin/main'. |         |            |            |      |
-|           |                              |                            |            |         |                                       |         |                |         |            |            |      |
-| Changes   | not                          | staged                     | for        | commit: |                                       |         |                |         |            |            |      |
-| (use      | "git                         | add                        | <file>..." | to      | update                                | what    | will           | be      | committed) |            |      |
-| (use      | "git                         | restore                    | <file>..." | to      | discard                               | changes | in             | working | directory) |            |      |
-|           | modified:                    | Git-from-the-ground-up.org |            |         |                                       |         |                |         |            |            |      |
-|           |                              |                            |            |         |                                       |         |                |         |            |            |      |
-| Untracked | files:                       |                            |            |         |                                       |         |                |         |            |            |      |
-| (use      | "git                         | add                        | <file>..." | to      | include                               | in      | what           | will    | be         | committed) |      |
-|           | .#Git-from-the-ground-up.org |                            |            |         |                                       |         |                |         |            |            |      |
-|           | .#README.org                 |                            |            |         |                                       |         |                |         |            |            |      |
-|           |                              |                            |            |         |                                       |         |                |         |            |            |      |
-| no        | changes                      | added                      | to         | commit  | (use                                  | "git    | add"           | and/or  | "git       | commit     | -a") |
-#+end_example
+| My      | current   | working    | dir        | is:     | /home/vipulmx/Projects/Code/learnings |         |                |         |            |        |      |
+| On      | branch    | main       |            |         |                                       |         |                |         |            |        |      |
+| Your    | branch    | is         | up         | to      | date                                  | with    | 'origin/main'. |         |            |        |      |
+|         |           |            |            |         |                                       |         |                |         |            |        |      |
+| Changes | not       | staged     | for        | commit: |                                       |         |                |         |            |        |      |
+| (use    | "git      | add        | <file>..." | to      | update                                | what    | will           | be      | committed) |        |      |
+| (use    | "git      | restore    | <file>..." | to      | discard                               | changes | in             | working | directory) |        |      |
+|         | modified: | README.org |            |         |                                       |         |                |         |            |        |      |
+|         | modified: | index.html |            |         |                                       |         |                |         |            |        |      |
+|         |           |            |            |         |                                       |         |                |         |            |        |      |
+| no      | changes   | added      | to         | commit  | (use                                  | "git    | add"           | and/or  | "git       | commit | -a") |
 
 
 * all org mode link
