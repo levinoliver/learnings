@@ -1,3 +1,4 @@
+#+TITLE: Git from the ground up
 #+SETUPFILE: theme-readtheorg.setup
 #+EXPORT_FILE_NAME: index
 #+PROPERTY: header-args :tangle "_config.yml"
