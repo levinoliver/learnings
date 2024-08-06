@@ -1,8 +1,8 @@
 #+SETUPFILE: theme-readtheorg.setup
 #+EXPORT_FILE_NAME: index
 #+PROPERTY: header-args :tangle "_config.yml"
-#+PROPERTY: :results output :exports results
-#+OPTIONS: results: both
+#+PROPERTY: :results output :exports both
+
 
 * github pages using org mode
 
@@ -35,23 +35,24 @@ to export the tangled source code use the keybind =C-c C-v t= which exports the 
 
 [[file:Git-from-the-ground-up.org][git from the ground up]]
 ** test
-#+BEGIN_SRC bash :eval yes
+
+#+BEGIN_SRC bash :exports both :results output
 echo "My current working dir is: $(pwd)"
 git status 2>&1 || echo Git is not happy.
 #+END_SRC
 
 #+RESULTS:
 #+begin_example
-| My      | current   | working    | dir        | is:     | /home/vipulmx/Projects/Code/learnings |         |                |         |            |        |      |
-| On      | branch    | main       |            |         |                                       |         |                |         |            |        |      |
-| Your    | branch    | is         | up         | to      | date                                  | with    | 'origin/main'. |         |            |        |      |
-|         |           |            |            |         |                                       |         |                |         |            |        |      |
-| Changes | not       | staged     | for        | commit: |                                       |         |                |         |            |        |      |
-| (use    | "git      | add        | <file>..." | to      | update                                | what    | will           | be      | committed) |        |      |
-| (use    | "git      | restore    | <file>..." | to      | discard                               | changes | in             | working | directory) |        |      |
-|         | modified: | README.org |            |         |                                       |         |                |         |            |        |      |
-|         |           |            |            |         |                                       |         |                |         |            |        |      |
-| no      | changes   | added      | to         | commit  | (use                                  | "git    | add"           | and/or  | "git       | commit | -a") |
+My current working dir is: /home/vipulmx/Projects/Code/learnings
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.org
+
+no changes added to commit (use "git add" and/or "git commit -a")
 #+end_example
 
 
