@@ -20,17 +20,17 @@ We're going to learn a little something about the git data model by crafting the
 * where are we and is git happy?
 lets start by seeing we are and if we're in a valid git repo
 
-#+BEGIN_src shell :results output
+#+BEGIN_src shell 
   echo "My current working dir is: $(pwd)"
   ls -l
   tree .
 #+end_src
 
 #+RESULTS:
-: My current working dir is: /home/vipulmx/Projects/Code/learnings/org/tmp
-: total 0
-: .
-: 
-: 0 directories, 0 files
+| My    | current      | working | dir   | is: | /home/vipulmx/Projects/Code/learnings/org/tmp |
+| total | 0            |         |       |     |                                               |
+| .     |              |         |       |     |                                               |
+|       |              |         |       |     |                                               |
+| 0     | directories, |       0 | files |     |                                               |
 
 * test
