@@ -3,205 +3,17 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-08-06 Tue 23:15 -->
+<!-- 2024-08-06 Tue 23:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
 <meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
-</style>
-<link rel="stylesheet" type="text/css" href="/Users/mikeh/css/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="/Users/mikeh/css/readtheorg/css/font-awesome.min.css"/>
-<link rel="stylesheet" type="text/css" href="/Users/mikeh/css/readtheorg/css/readtheorg.css"/>
-<script src="/Users/mikeh/css/readtheorg/js/jquery.min.js"></script>
-<script src="/Users/mikeh/css/readtheorg/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/Users/mikeh/css/readtheorg/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="/Users/mikeh/css/readtheorg/js/readtheorg.js"></script>
-<style type="text/css">
-pre.src:hover:before { display: none; }
-</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -209,19 +21,19 @@ pre.src:hover:before { display: none; }
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org274aa68">1. github pages using org mode</a></li>
-<li><a href="#orga342ea4">2. then create a <b>_config.yml</b> file and add the following content in it.</a></li>
-<li><a href="#orga9a5e2a">3. org file link test</a>
+<li><a href="#org4139a97">1. github pages using org mode</a></li>
+<li><a href="#orga440b46">2. then create a <b>_config.yml</b> file and add the following content in it.</a></li>
+<li><a href="#orgb91f922">3. org file link test</a>
 <ul>
-<li><a href="#orge5ab7f9">3.1. test</a></li>
+<li><a href="#org492e7bb">3.1. test</a></li>
 </ul>
 </li>
-<li><a href="#orgbc24d77">4. all org mode link</a></li>
+<li><a href="#orga7b8d5b">4. all org mode link</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org274aa68" class="outline-2">
-<h2 id="org274aa68"><span class="section-number-2">1.</span> github pages using org mode</h2>
+<div id="outline-container-org4139a97" class="outline-2">
+<h2 id="org4139a97"><span class="section-number-2">1.</span> github pages using org mode</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 create a <code>README.org</code> file add the following in it at the start.
@@ -234,8 +46,8 @@ create a <code>README.org</code> file add the following in it at the start.
 </div>
 </div>
 </div>
-<div id="outline-container-orga342ea4" class="outline-2">
-<h2 id="orga342ea4"><span class="section-number-2">2.</span> then create a <b>_config.yml</b> file and add the following content in it.</h2>
+<div id="outline-container-orga440b46" class="outline-2">
+<h2 id="orga440b46"><span class="section-number-2">2.</span> then create a <b>_config.yml</b> file and add the following content in it.</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
 <pre class="src src-yaml">remote_theme: pages-themes/cayman@v0.2.0
@@ -261,15 +73,15 @@ to export the tangled source code use the keybind <code>C-c C-v t</code> which e
 </p>
 </div>
 </div>
-<div id="outline-container-orga9a5e2a" class="outline-2">
-<h2 id="orga9a5e2a"><span class="section-number-2">3.</span> org file link test</h2>
+<div id="outline-container-orgb91f922" class="outline-2">
+<h2 id="orgb91f922"><span class="section-number-2">3.</span> org file link test</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 <a href="Git-from-the-ground-up.html">git from the ground up</a>
 </p>
 </div>
-<div id="outline-container-orge5ab7f9" class="outline-3">
-<h3 id="orge5ab7f9"><span class="section-number-3">3.1.</span> test</h3>
+<div id="outline-container-org492e7bb" class="outline-3">
+<h3 id="org492e7bb"><span class="section-number-3">3.1.</span> test</h3>
 <div class="outline-text-3" id="text-3-1">
 <div class="org-src-container">
 <pre class="src src-bash"><span style="color: #8f0075; font-weight: bold;">echo</span> <span style="color: #3548cf;">"My current working dir is: $(pwd)"</span>
@@ -277,18 +89,23 @@ git status 2&gt;&amp;1 || <span style="color: #8f0075; font-weight: bold;">echo<
 </pre>
 </div>
 
-<pre class="example">
+<pre class="example" id="org37f3a47">
 My current working dir is: /home/vipulmx/Projects/Code/learnings
 On branch main
 Your branch is up to date with 'origin/main'.
 
-nothing to commit, working tree clean
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+	modified:   theme-readtheorg.setup
+
+no changes added to commit (use "git add" and/or "git commit -a")
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgbc24d77" class="outline-2">
-<h2 id="orgbc24d77"><span class="section-number-2">4.</span> all org mode link</h2>
+<div id="outline-container-orga7b8d5b" class="outline-2">
+<h2 id="orga7b8d5b"><span class="section-number-2">4.</span> all org mode link</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 best themes for org html reside here <a href="https://olmon.gitlab.io/org-themes/">all links</a>
@@ -297,7 +114,7 @@ best themes for org html reside here <a href="https://olmon.gitlab.io/org-themes
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-08-06 Tue 23:15</p>
+<p class="date">Created: 2024-08-06 Tue 23:19</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
