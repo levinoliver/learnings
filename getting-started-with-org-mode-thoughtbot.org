@@ -51,3 +51,12 @@ edit source block in a separate window using =C-c '=
   end
 #+end_src
 
+* LaTeX inegrations
+
+- Characters: \alpha \rightarrow \beta
+- mathblock $O(n \log n)$
+
+  \begin{align*}
+  3 * 2 + &= 6 + 1\\
+          &= 7
+  \end{align*}

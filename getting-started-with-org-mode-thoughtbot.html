@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-08-07 Wed 22:35 -->
+<!-- 2024-08-07 Wed 22:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>getting started with org mode emacs</title>
@@ -14,6 +14,38 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -22,53 +54,54 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgbd8f69a">1. getting started with org mode emacs</a></li>
-<li><a href="#org055277d">2. Outliner</a>
+<li><a href="#orge2ba973">1. getting started with org mode emacs</a></li>
+<li><a href="#org65f849f">2. Outliner</a>
 <ul>
-<li><a href="#org72adb9a">2.1. more items</a></li>
-<li><a href="#org267758a">2.2. yet more items</a></li>
-<li><a href="#org9c4ddb2">2.3. M-Ret to add a new entry</a></li>
-<li><a href="#org2203450">2.4. M-[UP/Down] to arrange the</a></li>
+<li><a href="#org58bf6da">2.1. more items</a></li>
+<li><a href="#orgb19fcfa">2.2. yet more items</a></li>
+<li><a href="#org3dd51be">2.3. M-Ret to add a new entry</a></li>
+<li><a href="#org29ca0a5">2.4. M-[UP/Down] to arrange the</a></li>
 </ul>
 </li>
-<li><a href="#org2142f65">3. insert links as mentioned getting started with org mode exported html</a>
+<li><a href="#orgcaabe1d">3. insert links as mentioned getting started with org mode exported html</a>
 <ul>
-<li><a href="#orgf78c1f6">3.1. you can link links, <code>C-c l</code></a></li>
+<li><a href="#orgea4ad55">3.1. you can link links, <code>C-c l</code></a></li>
 </ul>
 </li>
-<li><a href="#org01b3b59">4. Tables</a></li>
-<li><a href="#org8a7e461">5. exporting to other formats</a>
+<li><a href="#org1c6d284">4. Tables</a></li>
+<li><a href="#orgca9b606">5. exporting to other formats</a>
 <ul>
-<li><a href="#org6734d5e">5.1. #+TITLE: new title to the file</a></li>
-<li><a href="#org163d1dd">5.2. no table of contents</a></li>
+<li><a href="#org9c704b3">5.1. #+TITLE: new title to the file</a></li>
+<li><a href="#orgcaf0676">5.2. no table of contents</a></li>
 </ul>
 </li>
-<li><a href="#orge10e84c">6. including source codes</a></li>
+<li><a href="#orgabb97e9">6. including source codes</a></li>
+<li><a href="#org8669af6">7. LaTeX inegrations</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbd8f69a" class="outline-2">
-<h2 id="orgbd8f69a"><span class="section-number-2">1.</span> <a href="https://www.youtube.com/watch?v=SzA2YODtgK4">getting started with org mode emacs</a></h2>
+<div id="outline-container-orge2ba973" class="outline-2">
+<h2 id="orge2ba973"><span class="section-number-2">1.</span> <a href="https://www.youtube.com/watch?v=SzA2YODtgK4">getting started with org mode emacs</a></h2>
 </div>
 
-<div id="outline-container-org055277d" class="outline-2">
-<h2 id="org055277d"><span class="section-number-2">2.</span> Outliner</h2>
+<div id="outline-container-org65f849f" class="outline-2">
+<h2 id="org65f849f"><span class="section-number-2">2.</span> Outliner</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Text text text!
 </p>
 </div>
-<div id="outline-container-org72adb9a" class="outline-3">
-<h3 id="org72adb9a"><span class="section-number-3">2.1.</span> more items</h3>
+<div id="outline-container-org58bf6da" class="outline-3">
+<h3 id="org58bf6da"><span class="section-number-3">2.1.</span> more items</h3>
 </div>
-<div id="outline-container-org267758a" class="outline-3">
-<h3 id="org267758a"><span class="section-number-3">2.2.</span> yet more items</h3>
+<div id="outline-container-orgb19fcfa" class="outline-3">
+<h3 id="orgb19fcfa"><span class="section-number-3">2.2.</span> yet more items</h3>
 </div>
-<div id="outline-container-org9c4ddb2" class="outline-3">
-<h3 id="org9c4ddb2"><span class="section-number-3">2.3.</span> M-Ret to add a new entry</h3>
+<div id="outline-container-org3dd51be" class="outline-3">
+<h3 id="org3dd51be"><span class="section-number-3">2.3.</span> M-Ret to add a new entry</h3>
 </div>
-<div id="outline-container-org2203450" class="outline-3">
-<h3 id="org2203450"><span class="section-number-3">2.4.</span> M-[UP/Down] to arrange the</h3>
+<div id="outline-container-org29ca0a5" class="outline-3">
+<h3 id="org29ca0a5"><span class="section-number-3">2.4.</span> M-[UP/Down] to arrange the</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Bold* itlaic/ verbatim=, strikethrough+
@@ -82,16 +115,16 @@ Bold* itlaic/ verbatim=, strikethrough+
 </div>
 </div>
 </div>
-<div id="outline-container-org2142f65" class="outline-2">
-<h2 id="org2142f65"><span class="section-number-2">3.</span> insert links as mentioned <a href="getting-started-with-org-mode-thoughtbot.html">getting started with org mode exported html</a></h2>
+<div id="outline-container-orgcaabe1d" class="outline-2">
+<h2 id="orgcaabe1d"><span class="section-number-2">3.</span> insert links as mentioned <a href="getting-started-with-org-mode-thoughtbot.html">getting started with org mode exported html</a></h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgf78c1f6" class="outline-3">
-<h3 id="orgf78c1f6"><span class="section-number-3">3.1.</span> you can link links, <code>C-c l</code></h3>
+<div id="outline-container-orgea4ad55" class="outline-3">
+<h3 id="orgea4ad55"><span class="section-number-3">3.1.</span> you can link links, <code>C-c l</code></h3>
 </div>
 </div>
-<div id="outline-container-org01b3b59" class="outline-2">
-<h2 id="org01b3b59"><span class="section-number-2">4.</span> Tables</h2>
+<div id="outline-container-org1c6d284" class="outline-2">
+<h2 id="org1c6d284"><span class="section-number-2">4.</span> Tables</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 put a pipe
@@ -114,8 +147,8 @@ put a pipe
 </table>
 </div>
 </div>
-<div id="outline-container-org8a7e461" class="outline-2">
-<h2 id="org8a7e461"><span class="section-number-2">5.</span> exporting to other formats</h2>
+<div id="outline-container-orgca9b606" class="outline-2">
+<h2 id="orgca9b606"><span class="section-number-2">5.</span> exporting to other formats</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 <code>C-c C-e</code>
@@ -125,21 +158,21 @@ put a pipe
 adding metadata to the org file
 </p>
 </div>
-<div id="outline-container-org6734d5e" class="outline-3">
-<h3 id="org6734d5e"><span class="section-number-3">5.1.</span> #+TITLE: new title to the file</h3>
+<div id="outline-container-org9c704b3" class="outline-3">
+<h3 id="org9c704b3"><span class="section-number-3">5.1.</span> #+TITLE: new title to the file</h3>
 </div>
 
-<div id="outline-container-org163d1dd" class="outline-3">
-<h3 id="org163d1dd"><span class="section-number-3">5.2.</span> no table of contents</h3>
+<div id="outline-container-orgcaf0676" class="outline-3">
+<h3 id="orgcaf0676"><span class="section-number-3">5.2.</span> no table of contents</h3>
 <div class="outline-text-3" id="text-5-2">
-<pre class="example" id="orgd283067">
+<pre class="example" id="orga8ed3f3">
 #+OPTIONS: toc:nil
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orge10e84c" class="outline-2">
-<h2 id="orge10e84c"><span class="section-number-2">6.</span> including source codes</h2>
+<div id="outline-container-orgabb97e9" class="outline-2">
+<h2 id="orgabb97e9"><span class="section-number-2">6.</span> including source codes</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 edit source block in a separate window using <code>C-c '</code>
@@ -156,9 +189,25 @@ edit source block in a separate window using <code>C-c '</code>
 </div>
 </div>
 </div>
+<div id="outline-container-org8669af6" class="outline-2">
+<h2 id="org8669af6"><span class="section-number-2">7.</span> LaTeX inegrations</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>Characters: &alpha; &rarr; &beta;</li>
+<li><p>
+mathblock \(O(n \log n)\)
+</p>
+
+\begin{align*}
+3 * 2 + &= 6 + 1\\
+        &= 7
+\end{align*}</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-08-07 Wed 22:35</p>
+<p class="date">Created: 2024-08-07 Wed 22:40</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
