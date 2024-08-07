@@ -29,6 +29,15 @@ put a pipe
 
 =C-c C-e=
 
+adding metadata to the org file
 
-adding metadaa to the org file
-#+TITLE: new title to the file
+** #+TITLE: new title to the file
+
+** no table of contents
+#+begin_comment
+,#+OPTIONS: toc:nil
+#+end_comment
+
+* including source codes
+
+
