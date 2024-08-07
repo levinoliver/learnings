@@ -39,5 +39,14 @@ adding metadata to the org file
 #+end_comment
 
 * including source codes
-
+edit source block in a separate window using =C-c '=
+#+begin_src ruby
+  def fact(n)
+    if n == 0
+      1
+    else
+      n * fac(n-1)
+    end
+  end
+#+end_src
 
