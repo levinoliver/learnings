@@ -1,0 +1,34 @@
+#+TITLE: getting started with org mode emacs
+#+SETUPFILE: theme-readtheorg.setup
+#+PROPERTY: :results output :exports both
+* [[https://www.youtube.com/watch?v=SzA2YODtgK4][getting started with org mode emacs]]
+
+* Outliner
+Text text text!
+** more items
+** yet more items
+** M-Ret to add a new entry
+** M-[UP/Down] to arrange the 
+Bold* itlaic/ verbatim=, strikethrough+
+
+- bulleted
+- list
+- items
+
+
+* insert links as mentioned [[file:getting-started-with-org-mode-thoughtbot.html][getting started with org mode exported html]]
+** you can link links, =C-c l=
+* Tables
+
+put a pipe
+
+|-----------+------|
+| some data | data |
+|-----------+------|
+* exporting to other formats
+
+=C-c C-e=
+
+
+adding metadaa to the org file
+#+TITLE: new title to the file

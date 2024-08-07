@@ -1,0 +1,9 @@
+#+Title: fun shell commands
+#+SETUPFILE: theme-readtheorg.setup
+#+AUTHOR: Levin
+#+PROPERTY: :results output :exports both
+* as shown in the thoughtbot video of the same title.
+
+emacs specific stuff
+** hacker typer package
+lot of other stuff was already known so keeping it out of this learnings

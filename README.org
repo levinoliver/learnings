@@ -59,3 +59,11 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 * all org mode link
 best themes for org html reside here [[https://olmon.gitlab.io/org-themes/][all links]]
+
+** jekyll good stuff
+- [[https://github.com/wowthemesnet/mediumish-theme-jekyll][medium like jekyll theme]]
+-
+-
+
+
+* 
