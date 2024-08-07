@@ -53,3 +53,4 @@ best themes for org html reside here [[https://olmon.gitlab.io/org-themes/][all 
 * [[file:getting-started-with-org-mode-thoughtbot.html][getting started with org mode emacs thoughtbot learning]]
 * [[https://levinoliver.github.io/learnings/getting-started-with-org-mode-thoughtbot.html][from readme getting into the org mode file]]
 * we can use org-present to make presentation
+* [[file:conquering-your-finance-with-emacs-thoughtbot.org][conquering finance with ledger cli in emacs]]

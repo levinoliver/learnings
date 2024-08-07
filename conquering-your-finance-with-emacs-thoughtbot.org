@@ -1,0 +1,36 @@
+#+TITLE: conquering-your-finance-with-emacs-thoughtbot
+#+SETUPFILE: theme-readtheorg.setup
+#+PROPERTY: :results output :exports both
+#+AUTHOR: Levin
+* [[https://www.youtube.com/watch?v=cjoCNRpLanY&pp=ygUXdGhvdWdodGJvdCBlbWFjcyBsZWRnZXI%3D][link to the video]]
+* ledger is double entry accounting tool. 
+* is a CLI tool
+* Double entry?
+what is it, every transaction has a source and destination account.
+
+| payee       | Amount  |
+| paycheck    | +100 rs |
+| bouht stuff | -20 rs  |
+| Total       | 80rs    |
+
+** Try this
+| Assets: Checkin account 100rs |
+| Income:paycheck -100rs        |
+| assets:checking account -20   |
+| expenses:Stuff 20             |
+| Total 0                       |
+
+
+** The five accounts
+- Assets
+- expenses
+- Income
+- Liability
+- equity
+
+* Accounting equations
+** Net worth = Assets - liabilities
+** Net income = Income - Expenses
+* so whats the point?
+** its your data
+** expressive reporting capacbility
