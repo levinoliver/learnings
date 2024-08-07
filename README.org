@@ -62,8 +62,7 @@ best themes for org html reside here [[https://olmon.gitlab.io/org-themes/][all 
 
 ** jekyll good stuff
 - [[https://github.com/wowthemesnet/mediumish-theme-jekyll][medium like jekyll theme]]
--
--
-
 
 * [[file:getting-started-with-org-mode-thoughtbot.html][getting started with org mode emacs thoughtbot learning]]
+* [[https://levinoliver.github.io/learnings/getting-started-with-org-mode-thoughtbot.html][from readme getting into the org mode file]]
+* we can use org-present to make presentation

@@ -57,6 +57,21 @@ edit source block in a separate window using =C-c '=
 - mathblock $O(n \log n)$
 
   \begin{align*}
-  3 * 2 + &= 6 + 1\\
-          &= 7
+  3 * 2 + 1 &= 6 + 1\\
+            &= 7
   \end{align*}
+
+* Literate programming
+
+gave example of his org file as a emacs config file. using
+#+begin_quote
+org-babel-load-file
+#+end_quote
+
+* Todo stuff!
+
+** TODO something i need todo press to invode the dealine =C-c d=  use the shift left right to move the calender dates.
+DEADLINE: <2024-08-14 Wed>
+** DONE something that i have done now 
+** something i have done and 
+** archiving by ~C-c C-x C-a~ append in a particular org file.
