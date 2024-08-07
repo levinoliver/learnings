@@ -66,4 +66,4 @@ best themes for org html reside here [[https://olmon.gitlab.io/org-themes/][all 
 -
 
 
-* [[file:getting-started-with-org-mode-thoughtbot.html][learning]][[file:getting-started-with-org-mode-thoughtbot.html][getting started with org mode emacs thoughtbot learning]]
+* [[file:getting-started-with-org-mode-thoughtbot.html][getting started with org mode emacs thoughtbot learning]]
