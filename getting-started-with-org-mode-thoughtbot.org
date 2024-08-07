@@ -34,9 +34,10 @@ adding metadata to the org file
 ** #+TITLE: new title to the file
 
 ** no table of contents
-#+begin_comment
+#+begin_example
 ,#+OPTIONS: toc:nil
-#+end_comment
+#+end_example
+
 
 * including source codes
 edit source block in a separate window using =C-c '=
