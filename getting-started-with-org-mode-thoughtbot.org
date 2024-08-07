@@ -83,8 +83,11 @@ by ~C-c C-x C-a~ append in a particular org file.
 it's taught in another video lets get in them later on then
 
 * cool things -
-=org2blog= publish all org files to wordpress.
-=org-publish= layout of a website, have directory, call org publish and it will spit out a website.
-=ox-twbx= 
+- =org2blog= publish all org files to wordpress.
+- =org-publish= layout of a website, have directory, call org publish and it will spit out a website.
+- =ox-twbx= 
+- =elfeed-org=
+- =entr=
+- 
 
-* 
+*  
