@@ -3,6 +3,7 @@
 #+EXPORT_FILE_NAME: index
 #+PROPERTY: header-args :tangle "_config.yml"
 #+PROPERTY: :results output :exports both
+#+AUTHOR: Levin
 
 
 * github pages using org mode

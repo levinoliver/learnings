@@ -1,6 +1,7 @@
 #+TITLE: getting started with org mode emacs
 #+SETUPFILE: theme-readtheorg.setup
 #+PROPERTY: :results output :exports both
+#+AUTHOR: Levin
 * [[https://www.youtube.com/watch?v=SzA2YODtgK4][getting started with org mode emacs]]
 
 * Outliner
@@ -70,8 +71,20 @@ org-babel-load-file
 
 * Todo stuff!
 
-** TODO something i need todo press to invode the dealine =C-c d=  use the shift left right to move the calender dates.
-DEADLINE: <2024-08-14 Wed>
-** DONE something that i have done now 
-** something i have done and 
-** archiving by ~C-c C-x C-a~ append in a particular org file.
+** TODO something i need todo
+DEADLINE: <2024-08-13 Tue>
+press to invoke the dealine =C-c d=  use the shift left right to move the calender dates.
+** DONE something
+that i have done now
+** archiving
+by ~C-c C-x C-a~ append in a particular org file.
+
+* TODO org capture templates
+it's taught in another video lets get in them later on then
+
+* cool things -
+=org2blog= publish all org files to wordpress.
+=org-publish= layout of a website, have directory, call org publish and it will spit out a website.
+=ox-twbx= 
+
+* 
