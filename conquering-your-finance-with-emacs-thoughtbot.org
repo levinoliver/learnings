@@ -34,3 +34,10 @@ what is it, every transaction has a source and destination account.
 * so whats the point?
 ** its your data
 ** expressive reporting capacbility
+** testing out ledger mode by creating a ledger file
+** [[file:example.ledger][example ledger file created]]
+** [[file:ledger.dat][example ledger dat file created]]
+** Ledger mode keybinds
+To enter a new date press <C-c C-a> select date then press enter.
+** open a ledger file and to start learning press
+<C-h i> currently at starting up section in the keeping a journal
